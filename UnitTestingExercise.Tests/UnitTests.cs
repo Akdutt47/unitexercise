@@ -1,67 +1,27 @@
-using System;
-using Xunit;
-
-namespace UnitTestingExercise.Tests
+namespace UnitTestingExercise
 {
-    public class UnitTests
+    public class Calculator
     {
-        [Theory]
-        [InlineData(2, 3, 5, 10)] //Add test data <-------
-        public void AddTest(int num1, int num2, int num3, int expected)
+        // Step 2: Create an Add method that accepts 3 integers, adds those integers, and returns an integer
+        public int Add(int num1, int num2, int num3)
         {
-            //Start Step 3 here:
-
-            //Arrange
-            // create a Calculator object
-            
-
-            //Act
-                // call the Add method that is located in the Calculator class
-                // and store its result in a variable named actual
-
-            //Assert
-                //Assert.Equal(expected, actual);
+            return num1 + num2 + num3;
         }
 
-        [Theory]
-        [InlineData()]//Add test data <-------
-        public void SubtractTest(int minuend, int subtrhend, int expected)
+        // Step 4: Create a Subtract method that accepts 2 integers
+        public int Subtract(int minuend, int subtrahend)
         {
-            //Start Step 5 here:
-
-            //Arrange
-
-            //Act
-
-            //Assert
-
+            return minuend - subtrahend;
         }
 
-        [Theory]
-        [InlineData()]//Add test data <-------
-        public void MultiplyTest(int num1, int num2, int expected)
+        // Step 6: Create a Multiply method that accepts 2 integers
+        public int Multiply(int num1, int num2)
         {
-            //Start Step 7 here:
-
-            //Arrange
-
-            //Act
-
-            //Assert
-
+            return num1 * num2;
         }
 
-        [Theory]
-        [InlineData()]//Add test data <-------
-        public void DivideTest(int num1, int num2, int expected)
-        {
-            //Arrange
-
-            //Act
-
-            //Assert
-
-        }
-
+        // Step 8: Create a Divide method that accepts 2 integers
+       
     }
 }
+

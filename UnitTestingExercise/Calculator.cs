@@ -20,10 +20,6 @@
             return num1 * num2;
         }
 
-        // Step 8: Create a Divide method that accepts 2 integers
         
-        }
     }
-
-
-
+}
